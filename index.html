@@ -5,6 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tyler Pencinger's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Simple CSS reset and alignment */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        .theme-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        hr {
+            margin-bottom: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        p, ul {
+            line-height: 1.6;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,95 +68,97 @@
         <span id="themeToggle" class="theme-toggle">Dark</span>
     </div>
 
-    <section id="intro" class="about">
-        <h2>About Me</h2>
-        <hr>
-        <p>Hello! My name is Tyler Pencinger, and I'm a Computer Science and Sales Engineering Student at the University of Florida. I’m passionate about using technology to solve real-world problems and excited to apply my skills to help organizations succeed.</p>
-    </section>
+    <div class="container">
+        <section id="intro" class="about">
+            <h2>About Me</h2>
+            <hr>
+            <p>Hello! My name is Tyler Pencinger, and I'm a Computer Science and Sales Engineering Student at the University of Florida. I’m passionate about using technology to solve real-world problems and excited to apply my skills to help organizations succeed.</p>
+        </section>
 
-    <section id="education" class="education">
-        <h2>Education</h2>
-        <hr>
-        <div class="school">
-            <h3>University of Florida, Gainesville, FL</h3>
-            <p>Bachelor of Engineering in Computer Science, Minor in Sales Engineering</p>
-            <p>Aug. 2022 – May 2026</p>
-            
-            <h3>L’Université Catholique de Lille, Lille, France</h3>
-            <p>University of Florida Engineering and Arts Study Abroad</p>
-            <p>May 2023 – July 2023</p>
-        </div>
-    </section>
+        <section id="education" class="education">
+            <h2>Education</h2>
+            <hr>
+            <div class="school">
+                <h3>University of Florida, Gainesville, FL</h3>
+                <p>Bachelor of Engineering in Computer Science, Minor in Sales Engineering</p>
+                <p>Aug. 2022 – May 2026</p>
+                
+                <h3>L’Université Catholique de Lille, Lille, France</h3>
+                <p>University of Florida Engineering and Arts Study Abroad</p>
+                <p>May 2023 – July 2023</p>
+            </div>
+        </section>
 
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <hr>
-        <div class="project">
-            <h3>Prefix-Free Parsing (PFP) Algorithm for GPUs</h3>
-            <p>Python, C++, CUDA, Linux, RAPIDS</p>
-            <p>Developed the first Python implementation of the prefix-free parsing algorithm for compressing DNA/protein sequences by over 1000%. Currently working on a CUDA-based GPU implementation, speeding up parsing by 900%.</p>
-        </div>
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <hr>
+            <div class="project">
+                <h3>Prefix-Free Parsing (PFP) Algorithm for GPUs</h3>
+                <p>Python, C++, CUDA, Linux, RAPIDS</p>
+                <p>Developed the first Python implementation of the prefix-free parsing algorithm for compressing DNA/protein sequences by over 1000%. Currently working on a CUDA-based GPU implementation, speeding up parsing by 900%.</p>
+            </div>
 
-        <div class="project">
-            <h3>F1 Race Strategy Optimization Application</h3>
-            <p>R, SQL, Pandas, NumPy, ggplot2, Scikit-learn</p>
-            <p>Built an application to optimize Formula 1 race strategies by analyzing race data and telemetry, with predictive models built using Scikit-learn.</p>
-        </div>
+            <div class="project">
+                <h3>F1 Race Strategy Optimization Application</h3>
+                <p>R, SQL, Pandas, NumPy, ggplot2, Scikit-learn</p>
+                <p>Built an application to optimize Formula 1 race strategies by analyzing race data and telemetry, with predictive models built using Scikit-learn.</p>
+            </div>
 
-        <div class="project">
-            <h3>Eco-Stepping iOS Application</h3>
-            <p>Swift, Xcode, Climatiq APIs, Firebase, MapKit, Python</p>
-            <p>Developing an iOS app that tracks carbon footprint using environmental data APIs and MapKit for location services, providing insights into personal environmental impact.</p>
-        </div>
-    </section>
+            <div class="project">
+                <h3>Eco-Stepping iOS Application</h3>
+                <p>Swift, Xcode, Climatiq APIs, Firebase, MapKit, Python</p>
+                <p>Developing an iOS app that tracks carbon footprint using environmental data APIs and MapKit for location services, providing insights into personal environmental impact.</p>
+            </div>
+        </section>
 
-    <section id="experience" class="experience">
-        <h2>Work Experience</h2>
-        <hr>
-        <div class="job">
-            <h3>Undergraduate GPU Researcher</h3>
-            <p>Boucher Lab at the University of Florida, Gainesville, FL</p>
-            <p>May 2024 – Present</p>
-            <ul>
-                <li>Working with Dr. Boucher exploring ways to accelerate prefix free parsing for large datasets utilizing Python and CUDA with NVIDIA GPUs.</li>
-                <li>NVIDIA Blog post and scholarly publication in progress.</li>
-            </ul>
-        </div>
+        <section id="experience" class="experience">
+            <h2>Work Experience</h2>
+            <hr>
+            <div class="job">
+                <h3>Undergraduate GPU Researcher</h3>
+                <p>Boucher Lab at the University of Florida, Gainesville, FL</p>
+                <p>May 2024 – Present</p>
+                <ul>
+                    <li>Working with Dr. Boucher exploring ways to accelerate prefix free parsing for large datasets utilizing Python and CUDA with NVIDIA GPUs.</li>
+                    <li>NVIDIA Blog post and scholarly publication in progress.</li>
+                </ul>
+            </div>
 
-        <div class="job">
-            <h3>Freelance Website Developer</h3>
-            <p>Start-Up, Gainesville, FL</p>
-            <p>July 2024 – Present</p>
-            <ul>
-                <li>Currently founding a freelance Web Development company to help student clubs and organizations at the University of Florida create websites.</li>
-            </ul>
-        </div>
+            <div class="job">
+                <h3>Freelance Website Developer</h3>
+                <p>Start-Up, Gainesville, FL</p>
+                <p>July 2024 – Present</p>
+                <ul>
+                    <li>Currently founding a freelance Web Development company to help student clubs and organizations at the University of Florida create websites.</li>
+                </ul>
+            </div>
 
-        <div class="job">
-            <h3>Operation’s Associate</h3>
-            <p>University of Florida RecSports, Gainesville, FL</p>
-            <p>Jan 2023 – June 2023</p>
-            <ul>
-                <li>Maintained and organized the Southwest Recreation Center weight room areas, cardio area, and recreational courts.</li>
-                <li>Provided premium customer service at equipment room help desks.</li>
-            </ul>
-        </div>
-    </section>
+            <div class="job">
+                <h3>Operation’s Associate</h3>
+                <p>University of Florida RecSports, Gainesville, FL</p>
+                <p>Jan 2023 – June 2023</p>
+                <ul>
+                    <li>Maintained and organized the Southwest Recreation Center weight room areas, cardio area, and recreational courts.</li>
+                    <li>Provided premium customer service at equipment room help desks.</li>
+                </ul>
+            </div>
+        </section>
 
-    <section id="skills" class="skills">
-        <h2>Technical Skills</h2>
-        <hr>
-        <p><strong>Languages:</strong> Python, C++, C#, R, CUDA, MATLAB, SQL, JavaScript, TCL, HTML/CSS</p>
-        <p><strong>Frameworks:</strong> React, Node.js, Flask, TensorFlow, Keras, WordPress, PyGame, Zephyr, Material-UI, FastAPI</p>
-        <p><strong>Developer Tools:</strong> Git, Docker, Linux, ISE, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, Tableau, CMake, CLion, Eclipse</p>
-        <p><strong>Libraries:</strong> pandas, NumPy, Matplotlib, RAPIDS cuDF, HLS, Scikit-Learn, RapidAI</p>
-    </section>
+        <section id="skills" class="skills">
+            <h2>Technical Skills</h2>
+            <hr>
+            <p><strong>Languages:</strong> Python, C++, C#, R, CUDA, MATLAB, SQL, JavaScript, TCL, HTML/CSS</p>
+            <p><strong>Frameworks:</strong> React, Node.js, Flask, TensorFlow, Keras, WordPress, PyGame, Zephyr, Material-UI, FastAPI</p>
+            <p><strong>Developer Tools:</strong> Git, Docker, Linux, ISE, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, Tableau, CMake, CLion, Eclipse</p>
+            <p><strong>Libraries:</strong> pandas, NumPy, Matplotlib, RAPIDS cuDF, HLS, Scikit-Learn, RapidAI</p>
+        </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <hr>
-        <p>You can reach me at <a href="mailto:tyler920pencinger@gmail.com">tyler920pencinger@gmail.com</a> or connect with me on <a href="https://linkedin.com/in/tyler-pencinger">LinkedIn</a>.</p>
-    </section>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <hr>
+            <p>You can reach me at <a href="mailto:tyler920pencinger@gmail.com">tyler920pencinger@gmail.com</a> or connect with me on <a href="https://linkedin.com/in/tyler-pencinger">LinkedIn</a>.</p>
+        </section>
+    </div>
 
     <script src="script.js"></script>
 </body>
