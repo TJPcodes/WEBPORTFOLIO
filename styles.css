@@ -4,8 +4,8 @@
 
 /* General styles for the entire document */
 body {
-    background-color: #808080; /* Light grey background color */
-    font-family: Arial, sans-serif; /* Default font style */
+    background-color: #256e2c; /* Light green background color */
+    font-family: 'Times New Roman', Times, serif, sans-serif; /* Default font style */
     margin: 0; /* Removes default margin */
     padding: 0; /* Removes default padding */
     box-sizing: border-box; /* Ensures padding and borders are included in the element's total w and h */
@@ -14,7 +14,7 @@ body {
 
 /* Dark theme styles */
 body.dark-theme {
-    background-color: #2c2c2c; /* Dark grey background color */
+    background-color: #4c6879; /* Dark grey background color */
     color: #fff; /* White text color for better contrast */
 }
 
@@ -23,7 +23,7 @@ header {
     display: flex; /* Flexbox for layout */ 
     justify-content: center; /* Space between the title and the toggle text */
     align-items: center; /* Center vertically */
-    background-color: #353535; /* Dark grey background color for header */
+    background-color: #256e2c; /* Dark grey background color for header */
     color: #fff; /* White text color */
     padding-top: 1.5rem; /* Padding inside the header */
 }
@@ -39,7 +39,7 @@ header {
 .theme-container {
     display: flex; /* Flexbox for layout */
     justify-content: end; /* Aligns the toggle text to the right */
-    background-color: #353535; /* Dark grey background color for header */
+    background-color: #000000; /* Dark grey background color for header */
     color: #fff; /* White text color */
     padding-bottom: 1rem; /* Padding inside theme container */
     padding-right: 3rem; /* Padding on the right side of the theme container */
