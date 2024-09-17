@@ -1,68 +1,82 @@
 /**
-* TODO: Customize the styles for your own portfolio website.
+* Custom styles for your portfolio website.
 */
 
 /* General styles for the entire document */
 body {
-    background-color: #256e2c; /* Light green background color */
-    font-family: 'Times New Roman', Times, serif, sans-serif; /* Default font style */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
-    box-sizing: border-box; /* Ensures padding and borders are included in the element's total w and h */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme change */
+    /* Light mode background with dynamic gradient */
+    background: linear-gradient(45deg, #A0E7E5, #B4F8C8); /* Light gradient background for light mode */
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s, background 0.3s, color 0.3s; /* Smooth transition for background and text colors */
 }
 
 /* Dark theme styles */
 body.dark-theme {
-    background-color: #4c6879; /* Dark grey background color */
+    background-color: #4c6879; /* Dark grey background for dark mode */
     color: #fff; /* White text color for better contrast */
 }
 
 /* Header styles */
 header {
-    display: flex; /* Flexbox for layout */ 
-    justify-content: center; /* Space between the title and the toggle text */
-    align-items: center; /* Center vertically */
-    background-color: #256e2c; /* Dark grey background color for header */
-    color: #fff; /* White text color */
-    padding-top: 1.5rem; /* Padding inside the header */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #256e2c; /* Dark grey background color for header in both themes */
+    color: #fff;
+    padding-top: 1.5rem;
 }
 
 /* Theme toggle text styles */
 .theme-toggle {
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    text-decoration: underline; /* Underlines the text to indicate it is clickable */
-    color: #fff; /* White text color */
-    font-size: 1rem; /* Font size of the toggle text */
+    cursor: pointer;
+    text-decoration: underline;
+    color: #fff;
+    font-size: 1rem;
 }
 
+/* Theme container styles */
 .theme-container {
-    display: flex; /* Flexbox for layout */
-    justify-content: end; /* Aligns the toggle text to the right */
-    background-color: #000000; /* Dark grey background color for header */
-    color: #fff; /* White text color */
-    padding-bottom: 1rem; /* Padding inside theme container */
-    padding-right: 3rem; /* Padding on the right side of the theme container */
+    display: flex;
+    justify-content: end;
+    background-color: #000000;
+    color: #fff;
+    padding-bottom: 1rem;
+    padding-right: 3rem;
 }
 
 /* General section styles */
 section {
-    padding: 2rem; /* Padding inside each section */
-    margin: 1rem 0; /* Adds margin above and below each section */
+    padding: 2rem;
+    margin: 1rem 0;
 }
 
 /* Styles for specific sections */
 .about, .projects, .contact, .education {
-    max-width: 800px; /* Maximum width for each section */
-    margin: 0 auto; /* Centers the sections horizontally */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-/* Specific styles for the projects section */
+/* Projects section styles */
 .projects {
-    margin-bottom: 1rem; /* Adds margin below the projects section */
+    margin-bottom: 1rem;
 }
 
-/* Styles for individual project items */
+/* Individual project items */
 .project {
-    margin-bottom: 2rem; /* Adds margin below each project */
+    margin-bottom: 2rem;
+}
+
+/* Optional: Add a nice hover effect to projects for extra visual appeal */
+.project:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Light mode (default) dynamic background effect */
+body:not(.dark-theme) {
+    background: linear-gradient(135deg, #FFD700, #FF6347); /* Light gradient */
+    color: #000; /* Dark text for light mode */
 }
