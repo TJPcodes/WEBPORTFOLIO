@@ -16,11 +16,11 @@ body {
 
 /* Rainbow animation for the name (h1) */
 @keyframes colorChange {
-    0% { color: #FF0000; }  /* Red */
-    25% { color: #00FF00; } /* Green */
-    50% { color: #0000FF; } /* Blue */
-    75% { color: #FFFF00; } /* Yellow */
-    100% { color: #FF00FF; } /* Pink */
+    0% { color: #efdb23; }  /*  */
+    25% { color: #FFD700; } /*  */
+    50% { color: #fea500; } /*  */
+    75% { color: #FF6347; } /* */
+    100% { color: #e23601; } /* */
 }
 
 /* Apply the color animation to h1 (the name) */
