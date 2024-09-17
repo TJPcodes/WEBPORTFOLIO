@@ -5,7 +5,7 @@
 /* General styles for the entire document */
 body {
     /* Light mode background with dynamic gradient */
-    background: linear-gradient(45deg, #000000, #000000); /* Light gradient background for light mode */
+    background: linear-gradient(90deg, #FFD700, #FF6347); /* Light gradient background for light mode */
     font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
