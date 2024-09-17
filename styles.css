@@ -14,7 +14,7 @@ body {
     color: #000; /* Set all text to black by default */
 }
 
-/* Name color animation */
+/* Rainbow animation for the name (h1) */
 @keyframes colorChange {
     0% { color: #FF0000; }  /* Red */
     25% { color: #00FF00; } /* Green */
@@ -23,19 +23,19 @@ body {
     100% { color: #FF00FF; } /* Pink */
 }
 
-/* Apply animation to the name */
+/* Apply the color animation to h1 (the name) */
 h1 {
     animation: colorChange 4s infinite; /* 4-second cycle, repeat infinitely */
-    transition: color 0.3s ease-in-out; /* Smooth transition of color */
+    transition: color 0.3s ease-in-out; /* Smooth transition for color */
 }
 
 /* Dark theme styles */
 body.dark-theme {
     background-color: #4c6879; /* Dark grey background for dark mode */
-    color: #fff; /* White text color for better contrast in dark mode */
+    color: #fff; /* White text color for better contrast */
 }
 
-/* Dark theme styles for the name */
+/* Stop animation and set h1 color to white in dark theme */
 body.dark-theme h1 {
     animation: none; /* Stop the color animation in dark mode */
     color: #FFFFFF;  /* Set the name to white in dark mode */
@@ -46,7 +46,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #256e2c; /* Dark grey background color for header */
+    background-color: #ddce8a; /* Dark grey background color for header */
     color: #fff;
     padding-top: 1.5rem;
 }
