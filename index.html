@@ -9,15 +9,21 @@
         /* Simple CSS reset and alignment */
         body {
             margin: 0;
-            padding: 0;
+            padding-top: 100px; /* Add padding to prevent overlap */
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #ffcc33, #ff9966); /* Restore background */
+            background-attachment: fixed;
         }
         header {
             text-align: center;
             padding: 20px;
             background-color: #333;
             color: #fff;
+            position: fixed; /* Keep header fixed */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10; /* Ensure header stays on top */
         }
         .theme-container {
             text-align: center;
