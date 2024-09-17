@@ -5,7 +5,7 @@
 /* General styles for the entire document */
 body {
     /* Light mode background with dynamic gradient */
-    background: linear-gradient(90deg, #FFD700, #FF6347); /* Light gradient background for light mode */
+    background: linear-gradient(135deg, #FFD700, #FF6347); /* Light gradient background for light mode */
     font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
@@ -46,9 +46,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ddce8a; /* Dark grey background color for header */
-    color: #fff;
-    padding-top: 1.5rem;
+    background: linear-gradient(135deg, #FFD700, #FF6347); /* Light gradient background for light mode */
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s, background 0.3s, color 0.3s; /* Smooth transition for background and text colors */
+    color: #000; /* Set all text to black by default */
 }
 
 /* Theme toggle text styles */
