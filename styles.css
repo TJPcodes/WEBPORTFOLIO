@@ -33,7 +33,7 @@ header {
 .theme-toggle {
     cursor: pointer;
     text-decoration: underline;
-    color: #fff;
+    color: #000000;
     font-size: 1rem;
 }
 
@@ -42,7 +42,7 @@ header {
     display: flex;
     justify-content: end;
     background-color: #000000;
-    color: #fff;
+    color: #000000;
     padding-bottom: 1rem;
     padding-right: 3rem;
 }
