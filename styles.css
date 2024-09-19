@@ -161,6 +161,21 @@ body:not(.dark-theme) h1 {
 .experience .job {
     margin-bottom: 40px;
 }
+.carousel-container {
+    max-width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.carousel-image {
+    width: auto;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
