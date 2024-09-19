@@ -5,66 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tyler Pencinger's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Simple CSS reset and alignment */
-        body {
-            margin: 0;
-            padding-top: 100px; /* Add padding to prevent overlap */
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #ffcc33, #ff9966); /* Background gradient */
-            background-attachment: fixed; /* Keep background fixed during scroll */
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-            position: fixed; /* Keep header fixed */
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 10; /* Ensure header stays on top */
-        }
-        .theme-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: transparent; /* Make the background of the container transparent */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-            border-radius: 10px; /* Optional: Add rounded corners */
-        }
-        h2 {
-            text-align: center;
-            margin-bottom: 10px;
-        }
-        hr {
-            margin-bottom: 20px;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        p, ul {
-            line-height: 1.6;
-        }
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -76,12 +16,14 @@
     </div>
 
     <div class="container">
+        <!-- About Me Section -->
         <section id="intro" class="about">
             <h2>About Me</h2>
             <hr>
             <p>Hello! My name is Tyler Pencinger, and I'm a Computer Science and Sales Engineering Student at the University of Florida. I’m passionate about using technology to solve real-world problems and excited to apply my skills to help organizations succeed.</p>
         </section>
 
+        <!-- Education Section -->
         <section id="education" class="education">
             <h2>Education</h2>
             <hr>
@@ -96,6 +38,7 @@
             </div>
         </section>
 
+        <!-- Projects Section -->
         <section id="projects" class="projects">
             <h2>Projects</h2>
             <hr>
@@ -118,6 +61,24 @@
             </div>
         </section>
 
+        <!-- Graphic Design Section -->
+        <section id="graphic-design" class="graphic-design">
+            <h2>Graphic Design</h2>
+            <hr>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="design1.jpg" alt="Design 1" class="gallery-img">
+                    <p class="gallery-description">Design 1: A creative artwork inspired by modern UI design principles.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="design2.jpg" alt="Design 2" class="gallery-img">
+                    <p class="gallery-description">Design 2: A minimalist poster showcasing typographic design.</p>
+                </div>
+                <!-- Add more designs here -->
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
         <section id="experience" class="experience">
             <h2>Work Experience</h2>
             <hr>
@@ -130,36 +91,10 @@
                     <li>- NVIDIA Blog post and scholarly publication in progress.</li>
                 </ul>
             </div>
-
-            <div class="job">
-                <h3>Freelance Website Developer</h3>
-                <p>Start-Up, Gainesville, FL</p>
-                <p>July 2024 – Present</p>
-                <ul>
-                    <li>- Currently founding a freelance Web Development company to help student clubs and organizations at the University of Florida create websites.</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <h3>Operation’s Associate</h3>
-                <p>University of Florida RecSports, Gainesville, FL</p>
-                <p>Jan 2023 – June 2023</p>
-                <ul>
-                    <li>- Maintained and organized the Southwest Recreation Center weight room areas, cardio area, and recreational courts.</li>
-                    <li>- Provided premium customer service at equipment room help desks.</li>
-                </ul>
-            </div>
+            <!-- Other jobs -->
         </section>
 
-        <section id="skills" class="skills">
-            <h2>Technical Skills</h2>
-            <hr>
-            <p><strong>Languages:</strong> Python, C++, C#, R, CUDA, MATLAB, SQL, JavaScript, TCL, HTML/CSS</p>
-            <p><strong>Frameworks:</strong> React, Node.js, Flask, TensorFlow, Keras, WordPress, PyGame, Zephyr, Material-UI, FastAPI</p>
-            <p><strong>Developer Tools:</strong> Git, Docker, Linux, ISE, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, Tableau, CMake, CLion, Eclipse</p>
-            <p><strong>Libraries:</strong> pandas, NumPy, Matplotlib, RAPIDS cuDF, HLS, Scikit-Learn, RapidAI</p>
-        </section>
-
+        <!-- Contact Section -->
         <section id="contact" class="contact">
             <h2>Contact</h2>
             <hr>

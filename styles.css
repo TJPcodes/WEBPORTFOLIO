@@ -4,7 +4,6 @@
 
 /* General styles for the entire document */
 body {
-    /* Light mode background with dynamic gradient */
     background: linear-gradient(135deg, #FFD700, #FF6347); /* Light gradient background for light mode */
     font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
@@ -14,19 +13,33 @@ body {
     color: #000; /* Set all text to black by default */
 }
 
-/* Rainbow animation for the name (h1) */
-@keyframes colorChange {
-    0% { color: #efdb23; }  /*  */
-    25% { color: #FFD700; } /*  */
-    50% { color: #fea500; } /*  */
-    75% { color: #FF6347; } /* */
-    100% { color: #e23601; } /* */
+/* Header styles */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #FFD700, #FF6347); /* Light gradient background */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transition: background-color 0.3s ease;
 }
 
-/* Apply the color animation to h1 (the name) */
+/* Apply the color-changing animation to h1 (the name) */
+@keyframes colorChange {
+    0% { color: #efdb23; }  
+    25% { color: #FFD700; } 
+    50% { color: #fea500; } 
+    75% { color: #FF6347; } 
+    100% { color: #e23601; } 
+}
+
 h1 {
     animation: colorChange 4s infinite; /* 4-second cycle, repeat infinitely */
-    transition: color 0.3s ease-in-out; /* Smooth transition for color */
+    transition: color 0.3s ease-in-out;
 }
 
 /* Dark theme styles */
@@ -35,24 +48,9 @@ body.dark-theme {
     color: #fff; /* White text color for better contrast */
 }
 
-/* Stop animation and set h1 color to white in dark theme */
 body.dark-theme h1 {
     animation: none; /* Stop the color animation in dark mode */
-    color: #FFFFFF;  /* Set the name to white in dark mode */
-}
-
-/* Header styles */
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #FFD700, #FF6347); /* Light gradient background for light mode */
-    font-family: 'Times New Roman', Times, serif, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: background-color 0.3s, background 0.3s, color 0.3s; /* Smooth transition for background and text colors */
-    color: #000; /* Set all text to black by default */
+    color: #FFFFFF; /* Set the name to white in dark mode */
 }
 
 /* Theme toggle text styles */
@@ -77,13 +75,22 @@ header {
 section {
     padding: 2rem;
     margin: 1rem 0;
-    color: #000; /* All section text set to black in light mode */
+    color: #000;
 }
 
 /* Styles for specific sections */
-.about, .projects, .contact, .education {
+.about, .projects, .contact, .education, .graphic-design, .experience {
     max-width: 800px;
     margin: 0 auto;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 /* Projects section styles */
@@ -91,15 +98,53 @@ section {
     margin-bottom: 1rem;
 }
 
-/* Individual project items */
 .project {
     margin-bottom: 2rem;
 }
 
-/* Optional: Add a nice hover effect to projects for extra visual appeal */
 .project:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
+}
+
+/* Graphic Design Section */
+.graphic-design {
+    margin-top: 40px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.gallery-description {
+    text-align: center;
+    margin-top: 10px;
+    color: #000;
+}
+
+/* Contact section */
+.contact p {
+    text-align: center;
 }
 
 /* Light mode (default) dynamic background effect */
@@ -108,7 +153,22 @@ body:not(.dark-theme) {
     color: #000; /* Black text in light mode */
 }
 
-/* Light mode styling for the name */
 body:not(.dark-theme) h1 {
     animation: colorChange 4s infinite; /* Keep the color-changing animation active in light mode */
+}
+
+/* Experience section styles */
+.experience .job {
+    margin-bottom: 40px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    header {
+        padding: 10px;
+    }
 }
